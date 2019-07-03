@@ -7,6 +7,8 @@ module.exports = {
     javascript: './js/index'
   },
 
+  // mode: 'production',
+
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, '/dist'),
