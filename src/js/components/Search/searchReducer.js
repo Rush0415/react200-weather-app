@@ -1,5 +1,5 @@
 const defaultState = {
-  searchTarget: '',
+  city: '',
   city: '',
   lat: '',
   lon: '',
@@ -11,6 +11,7 @@ const defaultState = {
   wind: 0,
   history: []
 };
+
 export default function SearchReducer(state = defaultState, action) {
   const { type, payload } = action;
 
@@ -40,7 +41,7 @@ export default function SearchReducer(state = defaultState, action) {
     case 'UPDATE_CITY': {
       return {
         ...state,
-        searchTarget: payload.searchTarget
+        city: payload.city
       };
     }
     default: {

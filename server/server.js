@@ -9,8 +9,8 @@ app.use(morgan('dev'));
 app.use(express.static('dist'));
 app.use(express.static('public'));
 
-app.get('/weather/:cityTarget', (req, res) => {
-  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${req.params.cityTarget}&APPID=${process.env.WEATHER_KEY}&units=imperial`)
+app.get('/weather/:city', (req, res) => {
+  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${req.params.city}&APPID=${process.env.WEATHER_KEY}&units=imperial`)
     .then(response => res.send(response.data))
     .catch(err => console.log(err));
 });

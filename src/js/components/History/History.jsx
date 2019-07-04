@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class History extends React.Component {
+export default class SearchHistory extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const { history } = this.props;
+
     return (
-      <div className='card border mp-5'>
-        <div className='card-header text-white bg-info'>Search History</div>
-        <div className='card-body' />
+      <div className='container'>
+        <div className='card'>
+          <div className='card-header'>Search History</div>
+          <div className='card-body'>
+            <ul>
+              {
+                history.map((search, index) => {
+                 return (
+                   <li key={index}>
+                     <p>{search.city } - {search.date} - {search.time}</p>
+                   </li>
+                 )
+                })
+              }
+            </ul>
+          </div>
+        </div>
       </div>
-    );
+    )
   }
 }
