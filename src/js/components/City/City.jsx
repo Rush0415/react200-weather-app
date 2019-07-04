@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CityInformation extends React.Component {
+export default class City extends React.Component {
   render() {
     return (
       <div className='card border mp-5'>
