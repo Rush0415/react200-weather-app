@@ -13,7 +13,8 @@ export default class App extends Component {
         </div>
         <div>
           <div className='row'>
-            <div className='col-12'><Search /></div>
+            <div className='col-12'><Search />
+            </div>
           </div>
         </div>
         <div>
