@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class History extends Component {
+export default class SearchHistory extends Component {
   constructor(props) {
     super(props);
   }
