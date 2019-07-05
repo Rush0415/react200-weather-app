@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import City from './city';
+import City from './City';
 
 function mapStoreToProps(store) {
   return {

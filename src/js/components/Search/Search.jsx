@@ -13,6 +13,13 @@ export default class Search extends Component {
     this.handleButton = this.handleButton.bind(this);
   }
 
+  handleButton(event) {
+    event.preventDefault();
+    const { dispatch } = this.props;
+    const { value } = event.target;
+    dispatch(getWeather(value));
+  }
+
   handleInput(event) {
     const { dispatch } = this.props;
     const { value } = event.target;
@@ -22,13 +29,6 @@ export default class Search extends Component {
   handleSearch() {
     const { dispatch, city } = this.props;
     dispatch(getWeather(city));
-  }
-
-  handleButton(event) {
-    event.preventDefault();
-    const { dispatch } = this.props;
-    const { value } = event.target;
-    dispatch(getWeather(value));
   }
 
   render() {
