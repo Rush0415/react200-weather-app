@@ -1,6 +1,5 @@
 const defaultState = {
   city: '',
-  city: '',
   lat: '',
   lon: '',
   temp: 0,

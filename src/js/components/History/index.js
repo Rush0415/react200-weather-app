@@ -4,7 +4,7 @@ import History from './history';
 function mapStoreToProps(store) {
   return {
     history: store.search.history,
-    cityInfo: store.search.cityInfo
+    // city: store.search.city
   };
 }
 
