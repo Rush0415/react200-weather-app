@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import City from './components/city';
-import Search from './components/search';
-import History from './components/history';
+import City from './components/City';
+import Search from './components/Search';
+import History from './components/History';
 
 export default class App extends Component {
   render() {
