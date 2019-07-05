@@ -1,10 +1,24 @@
+// import { connect } from 'react-redux';
+// import History from './History';
+
+// function mapStoreToProps(store) {
+//   return {
+//     cityInput: store.weather.cityInput,
+//     history: store.weather.history
+//   };
+// }
+
+// export default connect(mapStoreToProps)(History);
 import { connect } from 'react-redux';
-import History from './history';
+import History from './History';
 
 function mapStoreToProps(store) {
   return {
     history: store.search.history,
-    city: store.search.history
+    city: store.search.city,
+    lat: store.search.lat,
+    lon: store.search.lon
+
   };
 }
 
