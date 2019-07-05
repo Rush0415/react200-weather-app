@@ -17,8 +17,8 @@ export default class SearchHistory extends Component {
               {
                 history.map((search, index) => {
                   return (
-                    <li key={index}>
-                      <p>{search.city } - {search.date} - {search.time}</p>
+                    <li key={ index }>
+                      <p>{ search.city } - { search.date } - { search.time }</p>
                     </li>
                   );
                 })

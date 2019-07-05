@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
-import City from './City';
+import City from './city';
 
 function mapStoreToProps(store) {
   return {
     city: store.search.city,
     lat: store.search.lat,
     lon: store.search.lon,
+    icon: store.search.icon,
     temp: store.search.temp,
     pressure: store.search.pressure,
     humidity: store.search.humidity,

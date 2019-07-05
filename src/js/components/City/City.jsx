@@ -6,16 +6,17 @@ export default class City extends Component {
   }
 
   render() {
-    const { city, lat, lon, temp, pressure, humidity, lowestTemp, highestTemp, wind } = this.props;
-
+    const { city, lat, lon, temp, pressure, humidity, lowestTemp, highestTemp, wind, icon } = this.props;
+    
     return (
       <div className='container'>
         <div className='card'>
           <div className='card-header'>City Information</div>
           <div className='card-body'>
-            <div className='h5'>{city}</div>
-            <p>Lat/Long:{lat},{lon}</p>
-            <hr />
+            <p>Lat/Long: {lat},{lon}</p>
+            <div className='h5'>{city}  {icon} </div>
+            <p>Lat/Long: {lat},{lon} </p>
+
             <div className='row'>
               <div className='col-4'>
                 <h6> Temperature (F)</h6>
