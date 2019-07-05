@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import CityInfo from './city';
+import City from './city';
 
 function mapStoreToProps(store) {
   return {
-    city: store.search.city,
+    cityInfo: store.search.cityInfo,
     lat: store.search.lat,
     lon: store.search.lon,
     icon: store.search.icon,
@@ -16,4 +16,4 @@ function mapStoreToProps(store) {
   };
 }
 
-export default connect(mapStoreToProps)(CityInfo);
+export default connect(mapStoreToProps)(City);
