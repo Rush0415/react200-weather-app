@@ -40,12 +40,16 @@ export default class Search extends Component {
           <button className='btn btn-primary' onClick={ this.handleButton } value='Washington'>Washington D.C.</button>
           <button className='btn btn-primary' onClick={ this.handleButton } value='London'>London</button>
           <button className='btn btn-primary' onClick={ this.handleButton } value='Tokyo'>Tokyo</button>
+          <button className='btn btn-primary' onClick={ this.handleButton } value='Los Angeles'>Los Angeles</button>
+          <button className='btn btn-primary' onClick={ this.handleButton } value='Poway'>Poway</button>
+          <button className='btn btn-primary' onClick={ this.handleButton } value='Van nuys'>Van nuys</button>
+          <button className='btn btn-primary' onClick={ this.handleButton } value='burbank'>Burbank</button>
         </div>
         <div className='row'>
           <div className='input-group'>
             <input type='text' className='form-control' placeholder='Enter Your City' onChange={ this.handleInput } />
             <div className='input-group-append'>
-              <button className='btn btn-outline-primary' type='button' onClick={ this.handleSearch }>Go!</button>
+              <button className='btn btn-primary' type='button' onClick={ this.handleSearch }>Go!</button>
             </div>
           </div>
         </div>
