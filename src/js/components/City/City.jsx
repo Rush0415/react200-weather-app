@@ -47,6 +47,6 @@ export default class City extends Component {
           </div>
         </div>
       </div >
-    )
+    );
   }
 }

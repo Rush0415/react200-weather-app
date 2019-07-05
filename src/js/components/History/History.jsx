@@ -16,17 +16,17 @@ export default class SearchHistory extends Component {
             <ul>
               {
                 history.map((search, index) => {
-                 return (
-                   <li key={index}>
-                     <p>{search.city } - {search.date} - {search.time}</p>
-                   </li>
-                 )
+                  return (
+                    <li key={index}>
+                      <p>{search.city } - {search.date} - {search.time}</p>
+                    </li>
+                  );
                 })
               }
             </ul>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
