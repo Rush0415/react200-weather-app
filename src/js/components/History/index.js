@@ -11,7 +11,7 @@
 
 
 import { connect } from 'react-redux';
-import History from './History';
+import HistoryData from './History';
 
 function mapStoreToProps(store) {
   return {
@@ -23,4 +23,4 @@ function mapStoreToProps(store) {
   };
 }
 
-export default connect(mapStoreToProps)(History);
+export default connect(mapStoreToProps)(HistoryData);

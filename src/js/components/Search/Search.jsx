@@ -101,15 +101,15 @@ export default class Search extends Component {
     return (
       <div className='container'>
         <div className='row btn-group'>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='San Diego'>San Diego</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='New York'>New York</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='Washington'>Washington D.C.</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='London'>London</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='Tokyo'>Tokyo</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='Los Angeles'>Los Angeles</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='Poway'>Poway</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='Van nuys'>Van nuys</button>
-          <button className='btn btn-primary' onClick={ this.handleButton } value='burbank'>Burbank</button>
+        <button className='btn btn-outline-light' onClick={ this.handleButton } value='San Diego'>San Diego</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='New York'>New York</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='Washington'>Washington D.C.</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='London'>London</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='Tokyo'>Tokyo</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='Los Angeles'>Los Angeles</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='Poway'>Poway</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='Van nuys'>Van nuys</button>
+//           <button className='btn btn-outline-light' onClick={ this.handleButton } value='burbank'>Burbank</button>
         </div>
         <div className='row'>
           <div className='input-group'>
