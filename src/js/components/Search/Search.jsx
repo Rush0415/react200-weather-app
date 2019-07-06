@@ -19,19 +19,19 @@ export default class Search extends Component {
     const { value } = event.target;
     dispatch(updateCity(value));
   }
-  
+
   handleSearch() {
     const { dispatch, city } = this.props;
     dispatch(getWeather(city));
   }
 
-    handleButton(event) {
-    event.preventDefault();
-    const { dispatch } = this.props;
-    const { value } = event.target;
-    dispatch(getWeather(value));
+  handleButton(event) {
+  event.preventDefault();
+  const { dispatch } = this.props;
+  const { value } = event.target;
+  dispatch(getWeather(value));
   }
-  
+
 
   render() {
     return (

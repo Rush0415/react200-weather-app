@@ -8,7 +8,7 @@ export const getWeather = (searchTarget) => ({
 export const updateCity = (searchTarget) => ({
   type: 'UPDATE_CITY',
   payload: { searchTarget }
-})
+});
 
 
 

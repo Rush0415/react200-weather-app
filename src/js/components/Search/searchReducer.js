@@ -3,7 +3,7 @@ const defaultState = {
   city: '',
   lat: '',
   lon: '',
-  icon:'',
+  icon: '',
   temp: 0,
   pressure: 0,
   humidity: 0,
@@ -11,7 +11,7 @@ const defaultState = {
   highestTemp: 0,
   wind: 0,
   history: []
-}
+};
 
 export default function SearchReducer(state = defaultState, action) {
   const { type, payload } = action;
@@ -44,7 +44,7 @@ export default function SearchReducer(state = defaultState, action) {
       return {
         ...state,
         searchTarget: payload.searchTarget
-      }
+      };
     }
     default: {
       return state;
