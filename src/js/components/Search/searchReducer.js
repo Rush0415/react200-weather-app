@@ -20,7 +20,7 @@ export default function SearchReducer(state = defaultState, action) {
         ...state,
         city: payload.data.name,
         lat: payload.data.coord.lat,
-        lon: payload.data.coord.lon,
+        lon: payload.data.coord.lon,  
         temp: payload.data.main.temp,
         pressure: payload.data.main.pressure,
         humidity: payload.data.main.humidity,
