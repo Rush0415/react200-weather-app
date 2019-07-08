@@ -4,7 +4,7 @@
   "description": "Base application setup for creating a new react project.",
   "main": "server/index.js",
   "scripts": {
-    "build": "npm run less && webpack",
+    "build": "webpack --mode development",
     "start": "node server/index.js",
     "less": "lessc src/css/style.less dist/css/style.css",
     "lint": "eslint .",
@@ -35,7 +35,7 @@
     "redux-devtools": "^3.4.0",
     "redux-promise-middleware": "^6.1.1",
     "serve-favicon": "^2.0.1",
-    "webpack": "^4.35.3",
+    "webpack": "^4.8.3",
     "webpack-cli": "^2.1.5"
   },
   "devDependencies": {
